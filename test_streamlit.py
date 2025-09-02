@@ -4,7 +4,7 @@ import folium
 from streamlit_folium import st_folium
 
 # Import my data
-df = pd.read_csv("/Users/dinguid/PH Accelerator Dropbox/Dylan Ingui/Mac/Downloads/EasternMarketVendors - Sheet1.csv")
+df = pd.read_csv("EasternMarketVendors - Sheet1.csv")
 
 # Filter out Market Vendors and save the count
 no_market_vendors = df[df['Business'].str.lower() == "market vendor"]
